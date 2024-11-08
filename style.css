@@ -1,0 +1,137 @@
+/* General Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Times New Roman', Times, serif, sans-serif; scroll-behavior: smooth; }
+
+/* Top Bar */
+.top-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  background-color: #493333; color: #bd4444; padding: 10px 20px; font-size: 0.9em;
+}
+.top-bar div { display: flex; gap: 15px; }
+.top-bar a { color: #fff; text-decoration: none; }
+
+/* Navigation */
+nav { background-color: #f8f8f8; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #ddd; }
+.logo { font-size: 1.5em; color: #000000; font-weight: bold; }
+nav a { color: #333; text-decoration: none; font-weight: bold; margin: 0 15px; }
+nav a:hover { color: black; }
+
+/* Hero Section */
+#home {
+  background: url('https://cdn.thewirecutter.com/wp-content/media/2021/10/running-shoes-2048px-3128-2x1-1.jpg?width=1024&quality=75&crop=2:1&auto=webp') center/cover;
+  height: 80vh; display: flex; justify-content: center; align-items: center;
+  position: relative; color: gold; text-align: center;
+}
+#home::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text contrast */
+}
+.hero-content { position: relative; z-index: 1; background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 8px; }
+#home h1 { font-family: 'Playfair Display', serif; font-style: italic; color: black; font-weight: 700; font-size: 3em; }
+#home p { font-family: 'Playfair Display', serif; font-style: italic; color: #555; font-size: 1.5em; }
+
+/* Section Styling */
+section { padding: 50px 30px; text-align: center; }
+#about { background-color: white; padding: 80px 30px; }
+#about h2 { font-family: 'Lora', serif; font-size: 2.5em; font-weight: bold; color: #333; margin-bottom: 30px; }
+#about p { font-family: 'Lora', serif; font-size: 1.2em; color: #555; line-height: 1.6; margin-bottom: 40px; }
+
+/* Product-like Grid for About Us */
+#about .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center; /* Center-aligns the grid */
+}
+
+#about .product-item {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .product-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#about .product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#about .product-item h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.5em;
+  margin-top: 15px;
+  color: #333;
+}
+
+#about .product-item p {
+  font-size: 1.1em;
+  color: #777;
+  margin-top: 10px;
+}
+
+#projects { background: peachpuff; }
+#contact { background: black; color: white; }
+
+/* Social Icons */
+#contact .social-icons a { display: inline-block; margin-right: 15px; }
+#contact .icon { width: 40px; height: 40px; transition: transform 0.3s ease; }
+
+/* Button Container */
+.button-container { margin-top: 20px; }
+
+/* Generic Button Styles */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Browse Shoes Button */
+.browse-shoes { background-color: #bd4444; }
+.browse-shoes:hover { background-color: #993333; transform: scale(1.05); }
+
+/* Add to Cart Button */
+.add-to-cart { background-color: #493333; }
+.add-to-cart:hover { background-color: #3b2828; transform: scale(1.05); }
+
+/* Footer Links */
+#footer-links {
+  background-color: #493333;
+  color: #ffffff;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footer-column ul {
+  list-style: none;
+  text-align: left;
+}
+
+.footer-column h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
