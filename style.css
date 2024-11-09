@@ -54,14 +54,14 @@ h3 {
 
 /* List Styling */
 ul {
-    list-style-type: none; /* Removed default bullets */
+    list-style-type: none; 
     padding: 0;
     margin: 10px 0;
 }
 
 ul li {
     margin: 5px 0;
-    text-align: left; /* Align list items to the left */
+    text-align: left; 
 }
 
 /* Right Section Styling */
@@ -83,7 +83,7 @@ button {
 }
 
 button:hover {
-    background-color: #555; /* Lighter pale color on hover */
+    background-color: #555; 
 }
 
 /* Ensure sections within right-section have spacing and layout */
@@ -92,14 +92,14 @@ button:hover {
 
     /* Toggle Content Styling */
 .toggle-content {
-    max-height: 0; /* Initially hide content */
+    max-height: 0; 
     overflow: hidden;
-    transition: max-height 0.3s ease-out; /* Smooth transition */
+    transition: max-height 0.3s ease-out; 
 }
 /* Initially hide the content */
 .toggle-content {
     display: none;
-    transition: all 0.3s ease-out; /* Optional smooth transition */
+    transition: all 0.3s ease-out; /*
 }
 
 /* Show content when the class "show" is added */
@@ -109,16 +109,16 @@ button:hover {
 
 /* Styling for Work Experience Section */
 #Work-content ul li {
-    margin-bottom: 10px; /* Add space between list items */
+    margin-bottom: 10px; 
 }
 
-/* Alternatively, if you want to increase space specifically for the Shangri-La experience */
+
 #Work-content ul li:nth-child(1) {
-    margin-bottom: 15px; /* Adjust as per your preference */
+    margin-bottom: 15px; 
 }
 
 #Work-content ul li:nth-child(2) {
-    margin-bottom: 15px; /* Adjust as per your preference */
+    margin-bottom: 15px; 
 }
 
 
